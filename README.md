@@ -493,6 +493,4 @@ https://github.com/abhibadiger123
 # 📄 License
 
 This project is developed for **educational purposes** as part of a **Unified Mentor Software Development Internship** and BCA academic learning. It demonstrates the implementation of a complete Vehicle Rental Management System using the MERN Stack.
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+
