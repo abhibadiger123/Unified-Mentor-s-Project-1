@@ -1,0 +1,169 @@
+/* 1. Import Tailwind CSS v4 engine */
+@import "tailwindcss";
+
+/* 2. Base Layout CSS Variables & Custom System Themes */
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #ca8a04;
+  --bg-main: #f8fafc;
+  --surface: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* 3. Common Layout Container */
+.vrms-container {
+  max-w: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* 4. Component Cards & Forms */
+.vrms-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.vrms-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.vrms-input-group {
+  margin-bottom: 1.25rem;
+}
+
+.vrms-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.vrms-input, .vrms-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.vrms-input:focus, .vrms-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* 5. Universal Buttons */
+.vrms-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.vrms-btn-primary { 
+  background-color: var(--primary); 
+}
+.vrms-btn-primary:hover { 
+  background-color: var(--primary-hover); 
+}
+.vrms-btn-danger { 
+  background-color: var(--danger); 
+}
+.vrms-btn-danger:hover { 
+  background-color: #b91c1c; 
+}
+
+/* 6. Grid Layout Cards (Home & Dashboard Grid) */
+.vrms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.vrms-item-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* 7. Status Badges */
+.vrms-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}
+.vrms-badge-car { 
+  color: var(--primary); 
+  background: #eff6ff;
+}
+.vrms-badge-approved { 
+  background: #dcfce7; 
+  color: var(--success); 
+}
+.vrms-badge-rejected { 
+  background: #fee2e2; 
+  color: var(--danger); 
+}
+.vrms-badge-pending { 
+  background: #fef9c3; 
+  color: var(--warning); 
+}
+
+/* 8. Table Layout Systems */
+.vrms-table-wrapper {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.vrms-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.vrms-table th {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.vrms-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
